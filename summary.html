@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ETSystem Summary</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="summary">
+<div class="dashboard-container d-flex">
+  <aside class="sidebar p-3">
+    <div class="profile text-center mb-4">
+      <img src="avatar.png" alt="avatar" class="avatar-img mb-2">
+      <h4 class="mb-0" id="profile-name-summary">Admin User</h4>
+      <p class="text-muted small" id="profile-email-summary">admin@example.com</p>
+    </div>
+    <nav class="nav flex-column sidebar-nav">
+      <a href="index.html" class="nav-link">Dashboard</a>
+      <a href="expenses.html" class="nav-link">Expenses</a>
+      <a href="wallets.html" class="nav-link">Wallets</a>
+      <a href="summary.html" class="nav-link active">Summary</a>
+      <a href="settings.html" class="nav-link">Settings</a>
+      <button type="button" class="btn btn-outline-danger btn-sm mt-3" id="logout-btn-summary">Logout</button>
+    </nav>
+  </aside>
+
+  <main class="content-area flex-grow-1 p-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div>
+        <h2 class="section-title mb-0">Summary</h2>
+        <small class="text-muted">Overview of your finances</small>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-4">
+        <div class="card stat-card">
+          <div class="card-body">
+            <h6 class="text-muted">Total spent all time</h6>
+            <h3 id="sum-total-spent">0</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card stat-card">
+          <div class="card-body">
+            <h6 class="text-muted">This month spent</h6>
+            <h3 id="sum-month-spent">0</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card stat-card">
+          <div class="card-body">
+            <h6 class="text-muted">Net savings this month</h6>
+            <h3 id="sum-month-savings">0</h3>
+            <small class="text-muted" id="sum-income-label"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header">By category this month</div>
+      <div class="card-body">
+        <div id="sum-category-breakdown">
+          <p class="text-muted small mb-0">No data yet</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">All expenses</div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th class="text-end">Amount</th>
+              </tr>
+            </thead>
+            <tbody id="sum-all-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+<footer class='text-center py-3'>
+  <small class='text-muted'>Developed by Team DZX</small>
+</footer>
+
+</body>
+</html>

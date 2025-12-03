@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ETSystem Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login" class="login-page">
+<div class="container-fluid min-vh-100 login-shell d-flex align-items-center">
+  <div class="row flex-grow-1">
+    <!-- Info / promo side -->
+    <div class="col-lg-7 d-flex align-items-center login-info-panel mb-4 mb-lg-0">
+      <div class="login-info-content">
+        <h1 class="mb-2">Expense Tracking System</h1>
+        <p class="text-light-weak mb-3">
+          Monitor your daily, monthly and wallet based spending in one place.
+          Designed for students and professionals who want a clear view of their money.
+        </p>
+
+        <div class="row g-3 mb-3">
+          <div class="col-md-4">
+            <div class="login-metric">
+              <span class="label">Today</span>
+              <span class="value">12 expenses</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="login-metric">
+              <span class="label">This month</span>
+              <span class="value">PKR 42,500</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="login-metric">
+              <span class="label">Wallets</span>
+              <span class="value">HBL, UBL, Cash</span>
+            </div>
+          </div>
+        </div>
+
+        <ul class="login-feature-list mb-4">
+          <li>Dashboard view of all wallets and categories</li>
+          <li>Local storage, data stays in your browser</li>
+          <li>Summary page for teaching basic analytics</li>
+        </ul>
+
+        <div class="d-flex align-items-center flex-wrap gap-3">
+          <img src="pic.jpeg" alt="Expense chart preview" class="login-hero-img">
+          <div class="login-tag">
+            <span class="small text-uppercase">Demo mode</span>
+            <p class="mb-0">Use admin and 1234 to explore the system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login form side -->
+    <div class="col-lg-5 d-flex align-items-center justify-content-center">
+      <div class="card login-card shadow-lg">
+        <div class="card-body">
+          <div class="text-center mb-3">
+            <img src="app_icon.png" alt="logo" class="login-logo mb-2">
+            <h4 class="mb-0">ETSystem</h4>
+            <small class="text-muted">Sign in to continue</small>
+          </div>
+          <form id="login-form">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" id="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" id="password" class="form-control" required>
+              <div class="form-text">Hint, username admin and password 1234</div>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary login-btn-animated">Login</button>
+            </div>
+            <p class="mt-2 mb-0 text-danger small" id="login-msg"></p>
+          </form>
+          <p class="mt-3 mb-0 text-center small">
+            Do not have an account yet
+            <a href="signup.html" class="link-light">Create an account</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+<footer class='text-center py-3'>
+  <small class='text-muted'>Developed by Team DZX</small>
+</footer>
+
+</body>
+</html>
